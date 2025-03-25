@@ -1,24 +1,24 @@
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
 interface State {
-  count: number
+  count: number;
 }
 
-export const useCounterStore = defineStore('counter', {
-    state: (): State => ({
-      count: 0
-    }),
-    actions: {
-      increment() {
-        this.count++
-      },
-      decrement() {
-        this.count--
-      }
+export const useCounterStore = defineStore("counter", {
+  state: (): State => ({
+    count: 0,
+  }),
+  actions: {
+    increment() {
+      this.count++;
     },
-    getters: {
-      doubleCount(state) {
-        return state.count * 2
-      }
-    }
-  })
+    decrement() {
+      this.count--;
+    },
+  },
+  getters: {
+    doubleCount(state) {
+      return state.count * 2;
+    },
+  },
+});
