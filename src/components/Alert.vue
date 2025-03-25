@@ -1,11 +1,14 @@
 <template>
     <span>
-        this is Counter: {{ counter }}
+        Count: {{ counter.count }}
     </span>
-    <button @click="counter++">
+    <span>
+        Double count: {{ counter.doubleCount }}
+    </span>
+    <button @click="counter.increment">
         +
     </button>
-    <button @click="counter--">
+    <button @click="counter.decrement">
         -
     </button>
     <br>
@@ -14,5 +17,7 @@
 </template>
 
 <script setup lang="ts">
-const counter = useState('counter', () => Math.round(Math.random() * 1000))
+import { useCounterStore } from '~/store/counterStore';
+const counter = useCounterStore();
+// const counter = useState('counter', () => Math.round(Math.random() * 1000))
 </script>
