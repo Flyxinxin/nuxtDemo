@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     }
   },
   serverDir: 'src/server',
+  test: true,
 
   modules: [
     '@nuxt/content',

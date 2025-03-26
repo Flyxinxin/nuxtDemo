@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
   },
   "dependencies": {
     "@nuxt/content": "3.4.0",
@@ -16,7 +17,7 @@
     "@nuxt/icon": "1.11.0",
     "@nuxt/image": "1.10.0",
     "@nuxt/scripts": "0.11.2",
-    "@nuxt/test-utils": "3.17.2",
+    "@nuxt/test-utils": "^3.17.2",
     "@nuxt/ui": "3.0.1",
     "@pinia/nuxt": "^0.10.1",
     "@unhead/vue": "^2.0.0-rc.8",
@@ -27,5 +28,8 @@
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
-  "packageManager": "yarn@4.7.0+sha512.5a0afa1d4c1d844b3447ee3319633797bcd6385d9a44be07993ae52ff4facabccafb4af5dcd1c2f9a94ac113e5e9ff56f6130431905884414229e284e37bb7c9"
+  "packageManager": "yarn@4.7.0+sha512.5a0afa1d4c1d844b3447ee3319633797bcd6385d9a44be07993ae52ff4facabccafb4af5dcd1c2f9a94ac113e5e9ff56f6130431905884414229e284e37bb7c9",
+  "devDependencies": {
+    "vitest": "^3.0.9"
+  }
 }
