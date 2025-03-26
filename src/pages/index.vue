@@ -6,7 +6,7 @@
 
     <br />
     <NuxtLink
-      v-for="id in postArr"
+      v-for="id in data || []"
       :key="id"
       :to="`/posts/${id}`"
       class="post-link"
@@ -19,7 +19,8 @@
 <script setup lang="ts">
 import MyAlert from "~/components/MyAlert.vue";
 
-const postArr = [1, 2, 3, 4];
+const { data } = await useFetch("/api/post");
+
 // const counter = useState('counter', () => Math.round(Math.random() * 1000))
 </script>
 

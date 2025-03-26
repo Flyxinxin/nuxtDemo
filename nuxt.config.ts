@@ -8,6 +8,7 @@ export default defineNuxtConfig({
       '/**': { isr: true }
     }
   },
+  serverDir: 'src/server',
 
   modules: [
     '@nuxt/content',
